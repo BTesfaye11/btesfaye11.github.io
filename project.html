@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Social Change Project</title>
+        <style>
+            @font-face {
+                font-family: "Header";
+                src: url(fonts/header.ttf);
+            }
+
+            @font-face {
+                font-family: "Tinos";
+                src: url(fonts/tinos.ttf);
+            }
+
+            @font-face {
+                font-family: "Merchant";
+                src: url(fonts/merchant.ttf);
+            }
+
+            @font-face {
+                font-family: "Normal";
+                src: url(fonts/normal.ttf);
+            }
+
+            body {
+                height: 100%;
+                margin: auto;
+                background-color: black;
+                overflow-x: hidden;
+            }
+
+            h1 {
+                font-family: "Header", sans-serif;
+            }
+
+            #head p {
+                font-family: "Tinos", serif;
+            }
+
+            #head {
+                height: 900px;
+                position: relative;
+                margin: auto;  
+                overflow: hidden;             
+            }
+
+            #overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                opacity: 0.3;
+            }
+
+            #overlay img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            #text {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                color: white;
+                font-size: 200%;
+                text-shadow: 1px 1px 1px black;
+                text-align: center;
+                line-height: 80px;    
+                padding-top: 150px;     
+            }
+
+
+            h1 {
+                font-size: 100px;
+            }
+
+            .normal {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            #first {
+                color: #F9F9F9;
+                text-align: center;
+                background-color: black;
+                padding: 30px;
+                font-size: 35px;
+                width: 100%;
+                margin: auto;
+                height: 400px;
+            }
+
+            #first p {
+                max-width: 600px;
+                margin: auto;
+                padding-top: 60px;
+            }
+
+            #images {
+                display: flex;
+                height: 700px;
+                margin: auto;  
+                width: 100%; 
+            }
+
+            .prisoners {
+                width: 50%;
+                height: 100%;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                position: relative;
+            }
+
+            .prisoners img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .text2 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                color: white;
+                text-align: center;
+                padding: 20px 0;
+                font-size: 60px;
+                font-family: "Merchant", serif;
+                align-self: center;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4); /* Black overlay with opacity */
+            }
+
+            #viktor:hover #merchant  {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            #brittney:hover #olympian {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            #rest {
+                width: 800px;
+                margin: auto;
+                text-align: left;
+                color: white;
+                font-size: 130%;
+                padding: 30px 0px;
+            }
+
+            #rest p {
+                font-family: "Normal", sans-serif;
+                line-height: 25px;
+
+            }
+
+            #footer {
+                display: flex;
+                height: 50px;
+                align-items: center;
+                justify-content: space-between; 
+                padding: 10px 0px;
+                border-top: white 2px solid;
+            }
+
+            #project a {
+                font-size: larger;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-align: left;
+                padding-left: 20px;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+            }
+
+            #all {
+                margin-right: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #all a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                display: block;
+                width: 200px;
+                text-align: center;
+                font-size: larger;            
+            }
+
+            #all a:hover {
+                color: #5e5e5e;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            <div id="overlay">
+                <img src="img/swap.png" alt="Swap Picture">
+            </div>
+            <div id="text">
+                <h1>CONTROVERSIES IN MORALITY:</h1>
+                <p>The prisoner swap of a Soviet terrorist for a WNBA basketball player</p>
+            </div>        
+        </div> 
+
+        <div id="first" class="normal">
+            <p>On December 8th, 2022, the US and Russia conducted a prisoner exchange. The prisoners? Brittany Griner, a WNBA basketball player and USA Olympic athlete, and Viktor Bout, a former Soviet armsdealer.</p>
+        </div>
+
+        <div id="images">
+            <a class="prisoners" id="viktor" href="merchant.html">
+                <img src="img/bout.jpg" alt="Viktor Bout">
+                <div class="overlay" id="merchant"></div>
+                <div class="text2">
+                    <p>Merchant of Death</p>
+                </div>
+            </a> 
+            <a class="prisoners" id="brittney" href="olympian.html">
+                <img src="img/griner.jpg.png" alt="Brittney Griner">
+                <div class="overlay" id="olympian"></div>
+                <div class="text2">
+                    <p>USA Olympian</p>
+                </div>
+            </a>
+        </div>
+
+        <div id="rest">
+            <h2><em>Debate in American politics</em></h2>
+            <p>The U.S. experienced deep polarization regarding Brittney Griner's release. The political response to her release highlighted the deep ideological divide in the U.S., with some viewing her freedom as a diplomatic win, while others criticized the trade as a dangerous precedent. Many supporters celebrated her return, emphasizing that no American should be left behind, especially when she's being used as a political pawn by a foreign power. Critics, however, argued that Viktor Bout's release posed a threat to global security and questioned the fairness of prioritizing Griner over other wrongfully detained Americans. <br><br>The media narrative also shifted depending on the news outlet, and whether they were right-leaning or left-leaning. These contrasting narratives show how national identity and perceived loyalty to the U.S. played a role in the public's willingness to rally behind her. Critics commented on Griner's past protests, deeming her unpatriotic. Supporters argued that dissent is a form of patriotism. Moreover, the political controversy surrounding Griner's return invites a broader question: How do we determine the value of an American citizen abroad—and does athletic status tip the scales?
+            </p>
+            <br><br>
+            <h2><em>The value of an athlete</em></h2>
+            <p>It brings into question the value of an athlete, in reference to the American citizens still unjustly in jail in Russia. Griner's high-profile status as a WNBA star may have influenced the urgency of the negotiations for her release, prompting criticism over what message this sends about other Americans still detained. One particular prisoner is former U.S. Marine Paul Whelan, who has been imprisoned since 2018. Whelan's continued detainment raises questions about whose lives are prioritized in international diplomacy. Supporters of Whelan, including his family, expressed frustration that he was overlooked, despite having been imprisoned for years on espionage charges widely viewed as illegitimate. <br><br>While all Americans should be treated equally, the reality of political capital, public pressure, and media attention means that not all lives are given the same urgency. Some argue that if Griner were not famous, her situation might not have received the same level of government response concerns about justice. This creates a problematic precedent where public opinion and celebrity influence may overshadow fairness and equity.
+            </p>
+
+        </div>
+        <div id="footer">
+            <div id="project">
+                <a href="project.html">Griner-Bout | Group 10</a>
+            </div>
+            <div id="all">
+                <a href="project.html">Home</a>
+                <a href="merchant.html">Merchant of Death</a>
+                <a href="olympian.html">USA Olympian</a>
+                <a href="sources.html">Sources</a>
+            </div>
+        
+        </div>
+    </body>
+</html>
