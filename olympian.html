@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Brittney Griner Imprisonin</title>
+        <style>
+            @font-face {
+                font-family: "Headline";
+                src: url(fonts/headline.ttf);
+            }
+
+            @font-face {
+                font-family: "Tinos";
+                src: url(fonts/tinos.ttf);
+            }
+
+            @font-face {
+                font-family: "Normal";
+                src: url(fonts/normal.ttf);
+            }
+            body {
+                background-color: black;
+                color: white;
+                margin: 0;
+            }
+
+            #main {
+                background-image: url(img/brittney2.jpg);
+                background-size: cover;
+                width: 100%;
+                font-size: 40px;
+                height: 400px;
+                display: flex;
+                align-items: center;
+            }
+
+            #main p {
+                width: 1000px;
+                text-align: center;
+                margin: auto;
+                font-family: "Headline", sans-serif;
+                font-size: 120%;
+                color: white;
+                text-shadow: 5px 5px 10px black;
+            }
+
+            .story {
+                padding-top: 50px;
+                width: 700px;
+                font-size: 20px;
+                margin: auto;
+                text-align: left;
+                font-family: "Normal", sans-serif;
+                line-height: 25px;
+            }
+
+
+            #navbar {
+                display: flex;
+                justify-content: center;
+            }
+
+            #navbar a {
+                text-decoration: none;
+                color: #F9F9F9;
+                display: block;
+                width: 300px;
+                text-align: center;
+                padding: 10px;
+                font-size: 100%;
+                border-bottom: 2px solid black;
+            }
+
+
+            #navbar a:hover {
+                color: black;
+                background-color: rgba(255, 251, 251, 0.3);
+                border-bottom: white 2px solid;
+            }
+
+            #container {
+               display: flex; 
+               width: 100%;
+               height: 1300px;
+               justify-content: center;
+            }
+
+            #identity {
+                height: 100%;
+                align-self: stretch;
+                width: 250px;
+                object-fit: cover;
+                overflow: hidden;
+                /* opacity: 0.5; */
+            }
+
+            #quote {
+                height: 400px;
+                margin: auto;  
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                width: 700px;
+            }
+
+            #quote img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                padding-top: 20px;
+            }
+
+            #text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                box-sizing: border-box;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 20px 0px 0px 0px;
+                font-size: 20px;
+                font-family: "Tinos", serif;
+                align-self: center;
+            }
+
+            #overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4); /* Black overlay with opacity */
+            }
+
+            #everything {
+                flex: 1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <p>Two-time Olympic medalist Brittney Griner: How a WNBA basketball star ended up in a Russian prison</p>
+        </div>
+        <div id="navbar">
+            <a href="project.html">Home</a>
+            <a href="merchant.html">Merchant of Death</a>
+            <a href="olympian.html">USA Olympian</a>
+            <a href="sources.html">Sources</a>
+        </div>
+
+        <div id="container">
+            <!-- <img id="identity" src="img/brittney2.jpg"> -->
+            <div id="everything">
+            <p class="story">Brittney Griner is one of the greatest players in the WNBA. But like all WNBA players, she was earning less than $300,000 a year, a gross comparison to their NBA counterparts, who sign million-dollar deals. To supplement their income, WNBA players usually go oversees to play for a local team during their off season. Griner did that in February 2022, when she went to Russia to visit the team she would have played for. As soon as she landed in the Moscow Sheremetyevo Airport, however, instead of a look at the city she would play in, she was met with officers arresting her.<br><br>She was charged with the illegal smuggling of drugs across the border ("The Brittney Griner Case"). <br><br>Griner was facing a 10-year sentence in a Russian prison. In response to her arrest, supporters protested for her return, saying it was the fault of the WNBA for the underpay. Advocay groups called for her release, saying she was just as American as any other citizen and deserved the full protection of the United States government (Keaton). <br><br>Griner's detainment started on Februarty 17th and her trial began on July 1st (Keaton). Coincidentally, February 2022 marked the beginning of Russia's invasion of Ukraine, a highly opposed action that led to even more tensions between Russia and the West. Talks of a prisoner swap between the US and Russia sparked as people realized how tense relations were between the two great nations. While her lawyers were not privy to those conversations, they continued to work to free her from foreign detainment. <br><br>Six months after her arrest, Griner pleaded guilty, claiming she was medically prescribed the drugs to help with her injuries ("The Brittney Griner Case").</p>
+
+            <div id="quote">
+                <img src="img/brittneygriner.jpg">
+                <div id="overlay"></div>
+                <div id="text">
+                    <p><em>I would never risk the championship. My career is my whole life. I've dedicated everything, my body, and a lot of time away from my family. I played with injuries. There's nothing I wouldn't do for my career.</em> <br><br>Brittney Griner ("The Brittney Griner Case")</p>
+                </div>
+            </div>
+            
+            <p class="story">She was held in detainment until December 8th, 2022, when she was released from prison in a swap made between the US and Russia (Keaton). She was finally able to go home.</p>
+        </div>
+        </div>
+    </body>
+</html>
